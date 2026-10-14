@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Демонстрационный лендинг вымышленной студии красоты LUMI: пример услуг, цен, галереи и записи без сбора данных.">
+    <meta name="theme-color" content="#F4EFE8">
+    <title>LUMI — демонстрационный лендинг студии красоты</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F4EFE8'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%237E5346' stroke-width='1.5'/%3E%3Ccircle cx='19' cy='13' r='3' fill='%237E5346'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">К содержанию</a>
+
+    <header class="site-header" data-header>
+      <div class="container site-header__inner">
+        <a class="logo" href="#top" aria-label="LUMI, на начало страницы">
+          <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+            <circle cx="20" cy="13" r="3.5" fill="currentColor"></circle>
+          </svg>
+          <span>LUMI</span>
+        </a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Разделы страницы">
+          <a href="#services">Услуги</a>
+          <a href="#studio">Студия</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <a class="button button--primary button--small" href="#contacts">
+            <span class="button__full">Записаться</span>
+            <span class="button__short">Запись</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="nav-toggle__label">Открыть меню</span>
+            <span class="nav-toggle__lines" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="hero__watermark" aria-hidden="true">LUMI</p>
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Студия красоты</p>
+            <h1 id="hero-title">Ясный взгляд и <em>спокойные</em> руки</h1>
+            <p class="hero__lead">Уход за лицом, брови, ногти и волосы в светлом кабинете. Без очереди у зеркала и без спешки между визитами.</p>
+            <ul class="hero__facts">
+              <li>Лицо, брови, ногти и волосы</li>
+              <li>Один гость за визит</li>
+              <li>Контакты показаны текстом</li>
+            </ul>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#contacts">Записаться на визит</a>
+              <a class="button button--ghost" href="#services">Смотреть услуги</a>
+            </div>
+            <p class="hero__note">Демонстрационный сайт вымышленной студии LUMI. Цены, контакты и отзывы ниже — примеры для макета.</p>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="hero-panel__label">Образ страницы</p>
+            <svg class="hero-panel__art" viewBox="0 0 480 560" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Графический эскиз: тёплые круги на песочном фоне. Это не фотография салона.">
+              <rect width="480" height="560" fill="#E7DDD2"></rect>
+              <circle cx="300" cy="190" r="150" fill="#FBF8F4"></circle>
+              <circle cx="170" cy="320" r="110" fill="#E4D0C6"></circle>
+              <circle cx="300" cy="390" r="46" fill="#7E5346" opacity="0.45"></circle>
+              <path d="M70 470h340" fill="none" stroke="#242220" stroke-opacity="0.2" stroke-width="1"></path>
+            </svg>
+            <blockquote class="hero-panel__quote">
+              <p>Свет тёплый, голоса тихие, в расписании есть воздух.</p>
+            </blockquote>
+            <p class="hero-panel__caption">Текстовый эскиз атмосферы, не описание реального салона.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">01 — Услуги</p>
+            <h2 id="services-title">Услуги и демонстрационные цены</h2>
+            <p class="section-head__lead">Пример меню для макета. Суммы и длительность придуманы и не являются офертой.</p>
+          </header>
+
+          <div class="card-grid card-grid--services">
+            <article class="service-card reveal">
+              <p class="service-card__meta">около 60 минут</p>
+              <h3>Уход за лицом</h3>
+              <p>Очищение, мягкая маска и крем. Состав в макете не привязан к конкретной марке.</p>
+              <p class="service-card__price"><span class="service-card__amount">от 4&nbsp;900&nbsp;₽</span> <span class="demo-tag">пример цены</span></p>
+              <a class="text-link" href="#contacts">К контактам</a>
+            </article>
+
+            <article class="service-card reveal">
+              <p class="service-card__meta">около 45 минут</p>
+              <h3>Брови</h3>
+              <p>Коррекция формы и спокойное окрашивание. Без обещания «идеальной» симметрии.</p>
+              <p class="service-card__price"><span class="service-card__amount">от 1&nbsp;800&nbsp;₽</span> <span class="demo-tag">пример цены</span></p>
+              <a class="text-link" href="#contacts">К контактам</a>
+            </article>
+
+            <article class="service-card reveal">
+              <p class="service-card__meta">около 50 минут</p>
+              <h3>Ресницы</h3>
+              <p>Изгиб и тон окрашивания. В макете нет медицинских заявлений об эффекте.</p>
+              <p class="service-card__price"><span class="service-card__amount">от 1&nbsp;600&nbsp;₽</span> <span class="demo-tag">пример цены</span></p>
+              <a class="text-link" href="#contacts">К контактам</a>
+            </article>
+
+            <article class="service-card reveal">
+              <p class="service-card__meta">около 75 минут</p>
+              <h3>Маникюр</h3>
+              <p>Аккуратная форма и покрытие. Цвет гость выбрал бы уже на визите.</p>
+              <p class="service-card__price"><span class="service-card__amount">от 2&nbsp;400&nbsp;₽</span> <span class="demo-tag">пример цены</span></p>
+              <a class="text-link" href="#contacts">К контактам</a>
+            </article>
+
+            <article class="service-card reveal">
+              <p class="service-card__meta">около 45 минут</p>
+              <h3>Укладка</h3>
+              <p>Укладка по длине волос. Точная стоимость в реальном салоне зависела бы от длины.</p>
+              <p class="service-card__price"><span class="service-card__amount">от 3&nbsp;200&nbsp;₽</span> <span class="demo-tag">пример цены</span></p>
+              <a class="text-link" href="#contacts">К контактам</a>
+            </article>
+
+            <article class="service-card reveal">
+              <p class="service-card__meta">около 90 минут</p>
+              <h3>Вечерний образ</h3>
+              <p>Макияж и укладка к событию. В макете это одна карточка, без пакета «под ключ».</p>
+              <p class="service-card__price"><span class="service-card__amount">от 6&nbsp;500&nbsp;₽</span> <span class="demo-tag">пример цены</span></p>
+              <a class="text-link" href="#contacts">К контактам</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--sand" id="studio" aria-labelledby="studio-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">02 — Студия</p>
+            <h2 id="studio-title">Почему в студии спокойно</h2>
+            <p class="section-head__lead">Четыре принципа макета. За ними нет лицензий, наград и обещаний настоящего салона.</p>
+          </header>
+
+          <ul class="card-grid card-grid--benefits">
+            <li class="benefit reveal">
+              <span class="benefit__index" aria-hidden="true">01</span>
+              <h3>Время с запасом</h3>
+              <p>Между визитами оставлен промежуток, чтобы следующий гость не ждал у двери.</p>
+            </li>
+            <li class="benefit reveal">
+              <span class="benefit__index" aria-hidden="true">02</span>
+              <h3>Понятный ход встречи</h3>
+              <p>До начала процедуры мастер называет шаги и примерную длительность.</p>
+            </li>
+            <li class="benefit reveal">
+              <span class="benefit__index" aria-hidden="true">03</span>
+              <h3>Тихий кабинет</h3>
+              <p>Мягкий свет и мало людей одновременно. Без открытой витрины у прохода.</p>
+            </li>
+            <li class="benefit reveal">
+              <span class="benefit__index" aria-hidden="true">04</span>
+              <h3>Только нужный уход</h3>
+              <p>В процедуру не добавляют лишние этапы ради более крупного чека.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">03 — Галерея</p>
+            <h2 id="gallery-title">Галерея настроения</h2>
+            <p class="section-head__lead">Графические карточки показывают, как мог бы выглядеть блок работ. Это не фотографии клиентов и не снимки процедур.</p>
+          </header>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card gallery-card--feature reveal">
+              <div class="gallery-card__frame">
+                <svg viewBox="0 0 600 760" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Графический пример мягкого света: кремовый круг и тёплое пятно. Не фотография.">
+                  <rect width="600" height="760" fill="#E7DDD2"></rect>
+                  <circle cx="390" cy="220" r="180" fill="#FBF8F4"></circle>
+                  <circle cx="210" cy="430" r="140" fill="#E4D0C6"></circle>
+                  <circle cx="360" cy="520" r="36" fill="#7E5346"></circle>
+                </svg>
+              </div>
+              <figcaption class="gallery-card__caption"><span>01</span> Мягкий свет <span class="demo-tag">графический пример</span></figcaption>
+            </figure>
+
+            <figure class="gallery-card reveal">
+              <div class="gallery-card__frame">
+                <svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Графический пример линии брови: одна дуга на светлом фоне. Не фотография.">
+                  <rect width="480" height="360" fill="#FBF8F4"></rect>
+                  <path d="M70 210 Q 180 110 400 180" fill="none" stroke="#242220" stroke-width="3" stroke-linecap="round"></path>
+                  <circle cx="400" cy="180" r="5" fill="#7E5346"></circle>
+                </svg>
+              </div>
+              <figcaption class="gallery-card__caption"><span>02</span> Линия брови <span class="demo-tag">графический пример</span></figcaption>
+            </figure>
+
+            <figure class="gallery-card reveal">
+              <div class="gallery-card__frame">
+                <svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Графический пример формы ногтя: округлый силуэт на песочном фоне. Не фотография.">
+                  <rect width="480" height="360" fill="#EFE7DC"></rect>
+                  <rect x="190" y="50" width="100" height="210" rx="50" fill="#FBF8F4"></rect>
+                  <path d="M190 150h100" stroke="#E4D0C6" stroke-width="8"></path>
+                </svg>
+              </div>
+              <figcaption class="gallery-card__caption"><span>03</span> Форма ногтя <span class="demo-tag">графический пример</span></figcaption>
+            </figure>
+
+            <figure class="gallery-card reveal">
+              <div class="gallery-card__frame">
+                <svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Графический пример волны волос: несколько линий на тёплом фоне. Не фотография.">
+                  <rect width="480" height="360" fill="#E4D0C6"></rect>
+                  <path d="M30 90 C 110 30, 150 150, 250 90 S 390 30, 460 110" fill="none" stroke="#7E5346" stroke-width="2"></path>
+                  <path d="M30 160 C 120 100, 160 220, 260 160 S 400 100, 460 180" fill="none" stroke="#242220" stroke-width="1.5"></path>
+                  <path d="M30 230 C 110 170, 170 290, 270 230 S 390 170, 460 250" fill="none" stroke="#FBF8F4" stroke-width="2"></path>
+                </svg>
+              </div>
+              <figcaption class="gallery-card__caption"><span>04</span> Волна волос <span class="demo-tag">графический пример</span></figcaption>
+            </figure>
+
+            <figure class="gallery-card reveal">
+              <div class="gallery-card__frame">
+                <svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Графический пример тона кожи: слои полупрозрачных кругов. Не фотография.">
+                  <rect width="480" height="360" fill="#F6F1EA"></rect>
+                  <circle cx="180" cy="180" r="90" fill="#E7DDD2"></circle>
+                  <circle cx="270" cy="160" r="70" fill="#E4D0C6" opacity="0.85"></circle>
+                  <circle cx="240" cy="220" r="40" fill="#CDB7A6" opacity="0.8"></circle>
+                </svg>
+              </div>
+              <figcaption class="gallery-card__caption"><span>05</span> Тон кожи <span class="demo-tag">графический пример</span></figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-card--wide reveal">
+              <div class="gallery-card__frame">
+                <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Графический пример вечернего тона: широкие полосы кремового, песочного и глиняного цвета. Не фотография.">
+                  <rect width="1200" height="420" fill="#F4EFE8"></rect>
+                  <rect x="0" y="150" width="1200" height="90" fill="#E7DDD2"></rect>
+                  <rect x="0" y="240" width="1200" height="28" fill="#7E5346" opacity="0.55"></rect>
+                  <circle cx="960" cy="190" r="70" fill="#FBF8F4"></circle>
+                </svg>
+              </div>
+              <figcaption class="gallery-card__caption"><span>06</span> Вечерний тон <span class="demo-tag">графический пример</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--sand" id="reviews" aria-labelledby="reviews-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">04 — Отзывы</p>
+            <h2 id="reviews-title">Примеры отзывов</h2>
+            <p class="section-head__lead">Карточки ниже — учебные тексты для вёрстки. Их никто не оставлял как клиент.</p>
+          </header>
+
+          <p class="notice reveal" role="note">Это не отзывы реальных людей. Имена, фото и оценки намеренно не используются, чтобы макет не выглядел как настоящая подборка.</p>
+
+          <div class="card-grid card-grid--reviews">
+            <figure class="review-card reveal">
+              <figcaption class="review-card__label">Пример текста 1</figcaption>
+              <blockquote>
+                <p>На макете здесь стоял бы короткий отзыв о тихом кабинете и о том, что шаги процедуры назвали заранее.</p>
+              </blockquote>
+            </figure>
+            <figure class="review-card reveal">
+              <figcaption class="review-card__label">Пример текста 2</figcaption>
+              <blockquote>
+                <p>На макете здесь стоял бы отзыв о ровной форме и о визите, который закончился в заявленное время.</p>
+              </blockquote>
+            </figure>
+            <figure class="review-card reveal">
+              <figcaption class="review-card__label">Пример текста 3</figcaption>
+              <blockquote>
+                <p>На макете здесь стоял бы отзыв о мягком уходе и о записи без ожидания у двери.</p>
+              </blockquote>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacts" aria-labelledby="contacts-title">
+        <div class="container contact-layout">
+          <div class="contact-copy reveal">
+            <header class="section-head">
+              <p class="eyebrow">05 — Контакты</p>
+              <h2 id="contacts-title">Контакты и запись</h2>
+              <p class="section-head__lead">Адрес, телефон и почта вымышленные. Они показаны текстом и никуда не ведут, чтобы с макета нельзя было случайно позвонить или написать.</p>
+            </header>
+
+            <dl class="contact-list">
+              <div>
+                <dt>Адрес</dt>
+                <dd>
+                  г.&nbsp;Примерск, ул.&nbsp;Образцовая, д.&nbsp;10
+                  <span class="demo-tag">демонстрационный адрес</span>
+                </dd>
+              </div>
+              <div>
+                <dt>Телефон</dt>
+                <dd>
+                  +7 (000) 000-00-00
+                  <span class="demo-tag">демонстрационный номер</span>
+                </dd>
+              </div>
+              <div>
+                <dt>Почта</dt>
+                <dd>
+                  hello@lumi.example
+                  <span class="demo-tag">пример почты</span>
+                </dd>
+              </div>
+              <div>
+                <dt>График</dt>
+                <dd>
+                  Ежедневно, 10:00–21:00
+                  <span class="demo-tag">пример графика</span>
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div>
+          <p class="logo logo--footer"><span>LUMI</span></p>
+          <p class="site-footer__about">Вымышленная студия красоты. Страница собрана как коммерческий макет.</p>
+        </div>
+        <nav aria-label="Разделы в подвале">
+          <ul class="footer-nav">
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#studio">Студия</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <p class="site-footer__legal">Адрес, телефон, почта, цены, график и отзывы придуманы для демонстрации. Они не относятся к реальным людям, компаниям или помещениям. Не является офертой.</p>
+      </div>
+      <div class="container site-footer__bar">
+        <p>© 2026 LUMI, демонстрационный макет</p>
+        <a class="text-link" href="#top">Наверх</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
